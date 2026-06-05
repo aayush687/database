@@ -97,44 +97,44 @@ END;
 exit-when
 
 DECLARE
- vn_counter NUMBER(3):=0;
+    vn_counter NUMBER(3):=0;
 BEGIN
-  LOOP
-   EXIT WHEN vn_counter>3;
-   DBMS_OUTPUT.PUT_LINE('counter hasn't exceeded 3');
-   vn_counter:=vn_counter + 1;
-  ENDLOOP;
+    LOOP
+    EXIT WHEN vn_counter>3;
+    DBMS_OUTPUT.PUT_LINE('counter hasn't exceeded 3');
+    vn_counter:=vn_counter + 1;
+    ENDLOOP;
 END;
 
 
 
 while-loop
 WHILE condition LOOP
-  sequence of statements;
+    sequence of statements;
 END LOOP;
 
 
 vn_counter NUMBER(3):=0;
 BEGIN
- WHILE 3>=vn_counter LOOP
-   DBMS_OUTPUT.PUT_LINE('counter has not exceeded 3');
-   vn_counter := vn_counter + 1;
- END LOOP;
+    WHILE 3>=vn_counter LOOP
+    DBMS_OUTPUT.PUT_LINE('counter has not exceeded 3');
+    vn_counter := vn_counter + 1;
+    END LOOP;
 END;
 
 
 for-loop
 BEGIN
-  FOR condition LOOP
+    FOR condition LOOP
     statement;
-  END LOOP;
+    END LOOP;
 END;
 
 FOR vn_counter IN [REVERSE] lower_bound .. Upper_bound LOOP
-  sequence of statements;
+    sequence of statements;
 END LOOP;
 
 FOR vn_another_counter in 1 .. 4 LOOP
 
-  DBMS_OUTPUT.PUT_LINE ('loop number'||vn_another_counter);
+    DBMS_OUTPUT.PUT_LINE ('loop number'||vn_another_counter);
 END LOOP;
